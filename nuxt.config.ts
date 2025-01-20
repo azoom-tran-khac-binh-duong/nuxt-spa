@@ -3,7 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   ssr: false,
   devtools: { enabled: true },
+
   vite: {
+    build: {
+      modulePreload: false,
+    },
     $client: {
       build: {
         rollupOptions: {
@@ -15,5 +19,12 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+
+  modules: ['nuxt-vitalizer'],
+  vitalizer: {
+    disableStylesheets: 'entry',
+    disablePrefetchLinks: true,
+    disablePreloadLinks: true,
+  },
 })

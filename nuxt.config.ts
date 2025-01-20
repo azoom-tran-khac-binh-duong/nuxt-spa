@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
 
+  nitro: {
+    compressPublicAssets: true,
+  },
+
   vite: {
     build: {
       modulePreload: false,

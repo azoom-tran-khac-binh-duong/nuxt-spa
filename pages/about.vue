@@ -1,7 +1,7 @@
 <template>
   <div class="about-page">
     <h1>This is an about page</h1>
-    <p>Go to the <NuxtLink to="/">Home</NuxtLink> page</p>
+    <p>Go to the <NuxtLink to="/" noPrefetch>Home</NuxtLink> page</p>
   </div>
 </template>
 
